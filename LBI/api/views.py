@@ -3,4 +3,6 @@ from rest_framework.decorators import api_view
 
 
 @api_view(['GET'])
-def getData(request)
+def getData(request):
+    person = {'name':'Atharv', 'age':'18'}
+    return Response(person)
